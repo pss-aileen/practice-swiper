@@ -1,17 +1,30 @@
 const swiper = new Swiper('.swiper', {
-  direction: 'vertical',
-  loop: true,
-
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
+  grabCursor: true,
+  slidesPerView: 1.2,
+  spaceBetween: 32,
+  
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '#my-swiper-button-next',
+    prevEl: '#my-swiper-button-prev',
   },
 
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1.5,
+      spaceBetween: 32
+    },
+    // when window width is >= 640px
+    768: {
+      slidesPerView: 2.2,
+      spaceBetween: 48
+    },
+    1024: {
+      slidesPerView: 2.8,
+      spaceBetween: 48,
+    },
+    1280: {
+      slidesPerView: 3.5,
+      spaceBetween: 48,
+    }
+  }
 });
