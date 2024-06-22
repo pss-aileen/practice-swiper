@@ -1,4 +1,75 @@
-.swiper {
-  width: 600px;
-  height: 300px;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  padding: 32px 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  background: #f0efeb;
+  color: #333333;
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
+  padding-left: 64px;
+}
+
+.swiper-wrapper {
+  padding: 0;
+}
+
+.our-team .header {
+  display: flex;
+  align-items: center;
+  max-width: 1480px;
+  width: calc(100% - 128px);
+  margin: 0 auto;
+}
+
+.our-team .title {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.our-team .navigation {
+  margin-left: auto;
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.our-team .navigation .my-swiper-button {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+.our-team .navigation .swiper-button-disabled {
+  opacity: 0.4;
+}
+
+.our-team .member .image {
+  width: 100%;
+  height: 480px;
+  -o-object-position: top;
+     object-position: top;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: grayscale(100%);
+}
+.our-team .member .name {
+  font-size: 24px;
+}
+.our-team .member .position {
+  margin: 4px 0 0;
+}
+
+/* Small devices such as large phones (640px and up) */
+/* Medium devices such as tablets (768px and up) */
+/* Large devices such as laptops (1024px and up) */
+/* Largest devices such as desktops (1280px and up) *//*# sourceMappingURL=style.css.map */
