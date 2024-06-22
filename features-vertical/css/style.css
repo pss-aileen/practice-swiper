@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 32px;
+}
+
+.image-swiper {
+  flex: 1;
+  max-height: calc(100vh - 64px);
+}
+
+.thumbs-swiper {
+  flex: 1;
+  max-height: calc(100vh - 64px);
+}
+
+.swiper-slide {
+
+}
+
+.features {
+  display: flex;
+  gap: 32px;
+}
+
+.image-swiper__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbs-swiper__slide {
+  padding: 32px;
+  background: #f8f8f8;
+}
+
+.thumbs-swiper__slide h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.thumbs-swiper__slide p {
+  font-size: 14px;
+}
+
+/* https://webflow.com/ */

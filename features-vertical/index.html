@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>features - Practice Swiper</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="features">
+
+    <div class="thumbs-swiper swiper" thumbsSlider="" id="thumbs-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide thumbs-swiper__slide">
+          <i class="bi bi-wind"></i>
+          <h2>
+            Spring Sky
+          </h2>
+          <p>
+            The sky in spring is often clear and bright, with soft pastel hues and gentle, warming sunshine marking the
+            transition from winter to summer.
+          </p>
+        </div>
+        <div class="swiper-slide thumbs-swiper__slide">
+          <i class="bi bi-sun-fill"></i>
+          <h2>
+            Summer Sky
+          </h2>
+          <p>
+            Summer skies are vibrant and vivid, featuring deep blue hues and bright sunshine. Occasional thunderstorms
+            bring dramatic clouds and brief, refreshing rain.
+          </p>
+        </div>
+        <div class="swiper-slide thumbs-swiper__slide">
+          <i class="bi bi-tree-fill"></i>
+          <h2>
+            Autumn Sky
+          </h2>
+
+          <p>
+            Autumn skies display a rich palette of colors, with fiery sunsets and crisp, cool air. The changing leaves
+            add
+            a stunning backdrop to the seasonal transition.
+          </p>
+        </div>
+        <div class="swiper-slide thumbs-swiper__slide">
+          <i class="bi bi-snow"></i>
+          <h2>
+            Winter Sky
+          </h2>
+          <p>
+            Winter skies are often pale and serene, with soft, diffused light and frequent overcast days. Snowfall
+            transforms the landscape, creating a tranquil, ethereal beauty.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="image-swiper swiper" id="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./images/spring.jpg" alt="Spring" class="image-swiper__image"></div>
+        <div class="swiper-slide"><img src="./images/summer.jpg" alt="Summer" class="image-swiper__image"></div>
+        <div class="swiper-slide"><img src="./images/autum.jpg" alt="Autum" class="image-swiper__image"></div>
+        <div class="swiper-slide"><img src="./images/winter.jpg" alt="Winter" class="image-swiper__image"></div>
+      </div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+  </div><!--features-->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
