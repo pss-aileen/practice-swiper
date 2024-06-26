@@ -5,6 +5,8 @@ const swiper = new Swiper('.swiper', {
   navigation: {
     // スマホでの仕様をfalseに変更
     enabled: false,
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 
   breakpoints: {
@@ -12,16 +14,12 @@ const swiper = new Swiper('.swiper', {
       spaceBetween: 8,
       navigation: {
         enabled: true,
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
       }
     },
     1024: {
       spaceBetween: 32,
       navigation: {
         enabled: true,
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
       }
     },
   },
