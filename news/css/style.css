@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: bottom;
+  width: 100%;
+}
+
+html {
+}
+
+body {
+  font-family: "Noticia Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 32px 0;
+}
+
+.noticia-text-regular {
+  font-family: "Noticia Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.noticia-text-bold {
+  font-family: "Noticia Text", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.latest-news {
+
+}
+
+.latest-news-header {
+  width: calc(100% - 32px);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.latest-news-header__title {
+  font-size: 20px;
+}
+
+.latest-news-header__link {
+  margin-left: auto;
+  margin-right: 0;
+  color: #dc143c;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.swiper {
+  width: 100%;
+  /* 以下を設定することで、各スライダーのコンテンツの高さがそろった。理解できていないので別で試す */
+  height: auto;
+  padding: 0 16px;
+  user-select: none;
+}
+
+.swiper-wrapper {
+}
+
+.swiper-slide {
+  width: 160px;
+}
+
+.news-item {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.news-item__image-wrapper {
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+
+.news-item__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .3s;
+}
+
+.news-item:hover .news-item__image {
+  transform: scale(1.05);
+}
+
+.news-item__detail-wrapper {
+  padding-top: 8px;
+}
+
+.news-item__date {
+  display: block;
+  font-size: 14px;
+  color: #999;
+}
+
+.news-item__title {
+  font-size: 16px;
+  margin: 8px 0 0;
+}
+
+@media only screen and (min-width: 768px) {
+.swiper-wrapper {
+}
+
+.swiper-slide {
+  display: flex;
+  flex-wrap: wrap;
+  background: #f8f8f8;
+  height: initial;
+  width: 240px;
+}
+
+  .news-item {
+    background: #f8f8f8;
+  }
+
+  .news-item__image-wrapper {
+  
+  }
+
+  .news-item__detail-wrapper {
+    padding: 16px 24px 24px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .latest-news-header {
+    width: calc(100% - 68px * 2);
+  }
+
+  .latest-news-header__title {
+    font-size: 32px;
+  }
+
+  .swiper {
+    padding: 0 68px;
+  }
+
+  .swiper-slide {
+    width: 320px;
+  }
+}
+
+
+/*
+@media only screen and (min-width: 640px) {}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 1024px) {}
+
+@media only screen and (min-width: 1280px) {} 
+*/

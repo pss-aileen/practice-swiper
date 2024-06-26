@@ -1,12 +1,15 @@
 # Practice Swiper
 
-- [team](https://pss-aileen.github.io/practice-swiper/team/): 従業員一覧
+- [team](https://pss-aileen.github.io/practice-swiper/team/): 横スクロールの従業員一覧
   - 参考: https://www.axarb.com/about-us
-- [seasons](https://pss-aileen.github.io/practice-swiper/seasons/)
+- [news](): 横スクロールのニュース
+  - 参考: https://fctwente.nl/
+- [seasons](https://pss-aileen.github.io/practice-swiper/seasons/): 固定位置で画像が入れ替わる季節紹介
   - Swiperで実装して、CSSがうまく効かなかったのでSwiperを使わず実装...
+  - 参考: https://webflow.com/
 
 ## アイディア
-- [Webflow: Create a custom website | Visual website builder](https://webflow.com/?r=0)
+
   - 縦のスワイパー
   - 項目を選択すると内容が表示されて、イメージ画像が表示される
 - お客様の声的なものを横スクロール
