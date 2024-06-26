@@ -18,12 +18,12 @@ body {
 }
 
 .thumbs-swiper-wrapper {
-  display: block;
 }
 
 .thumbs-swiper {
   flex: 1;
-  /* max-height: calc(100vh - 64px); */
+  /* height: fit-content; */
+  overflow: visible;
 }
 
 .swiper-slide {
@@ -33,6 +33,7 @@ body {
 .features {
   display: flex;
   gap: 32px;
+  align-items: flex-start;
 }
 
 .image-swiper__image {
@@ -44,7 +45,7 @@ body {
 
 .thumbs-swiper__slide {
   padding: 32px;
-  background: #f8f8f8;
+  /* background: #f8f8f8; */
   cursor: pointer;
   border-radius: 8px;
   display: flex;
@@ -74,6 +75,11 @@ body {
 .image-swiper__slide {
 }
 
-.swiper-slide-thumb-active p{
+.swiper-slide-thumb-active {
+  background: #f8f8f8;
+  height: 100px;
+}
+
+.swiper-slide-thumb-active p {
   display: block;
 }

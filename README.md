@@ -1,6 +1,6 @@
 # Practice Swiper
 
-- [team](./team/): 従業員一覧
+- [team](https://pss-aileen.github.io/practice-swiper/team/p): 従業員一覧
   - 参考: https://www.axarb.com/about-us
 
 ## アイディア

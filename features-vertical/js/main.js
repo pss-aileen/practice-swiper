@@ -5,6 +5,7 @@ const thumbsSwiper = new Swiper('#thumbs-swiper', {
   spaceBetween: 10,
   watchSlidesProgress: true,
   autoHeight: true,
+  // calculateHeight:true,
 });
 
 const swiper = new Swiper('#swiper', {
