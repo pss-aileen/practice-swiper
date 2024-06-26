@@ -1,13 +1,16 @@
 # Practice Swiper
 
+- [team](https://pss-aileen.github.io/practice-swiper/team/): 従業員一覧
+  - 参考: https://www.axarb.com/about-us
+- [seasons](https://pss-aileen.github.io/practice-swiper/seasons/)
+  - Swiperで実装して、CSSがうまく効かなかったのでSwiperを使わず実装...
+
 ## アイディア
 - [Webflow: Create a custom website | Visual website builder](https://webflow.com/?r=0)
   - 縦のスワイパー
   - 項目を選択すると内容が表示されて、イメージ画像が表示される
 - お客様の声的なものを横スクロール
   - https://corp.tential.jp/
-- 従業員一覧、Our Team
-  - https://www.axarb.com/about-us
 - 縦のコンテンツスクロール
   - ヒーローエリア
   - 阿防と
