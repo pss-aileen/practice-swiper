@@ -2,9 +2,7 @@
 
 :root {
   --swiper-navigation-size: 12px;
-  --swiper-navigation-sides-offset: 64px;
 }
-
 
 * {
   box-sizing: border-box;
@@ -15,36 +13,19 @@ img {
   width: 100%;
 }
 
-html {
-}
-
 body {
   font-family: "Noticia Text", serif;
   font-weight: 400;
   font-style: normal;
   margin: 0;
   padding: 32px 0;
-}
-
-.noticia-text-regular {
-  font-family: "Noticia Text", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.noticia-text-bold {
-  font-family: "Noticia Text", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-
-.latest-news {
-
+  /* 全体を overflow: hidden として、 Swiperが飛び出さないようにする */
+  overflow: hidden;
 }
 
 .latest-news-header {
   width: calc(100% - 32px);
+  max-width: 1080px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -52,6 +33,7 @@ body {
 
 .latest-news-header__title {
   font-size: 20px;
+  margin: 0;
 }
 
 .latest-news-header__link {
@@ -64,14 +46,14 @@ body {
 }
 
 .swiper {
-  width: 100%;
+  width: calc(100% - 32px);
+  margin: 16px auto 0;
+  max-width: 1080px;
   /* 以下を設定することで、各スライダーのコンテンツの高さがそろった。理解できていないので別で試す */
   height: auto;
-  padding: 0 16px;
+  /* padding: 0 16px; */
   user-select: none;
-}
-
-.swiper-wrapper {
+  overflow: visible;
 }
 
 .swiper-slide {
@@ -118,30 +100,21 @@ body {
 
 @media only screen and (min-width: 768px) {
   :root {
-    --swiper-navigation-sides-offset: 16px;
+    --swiper-navigation-sides-offset: 0px;
   }
 
   .swiper {
-    padding: 0 16px 24px;
-  }
-
-  .swiper-wrapper {
+    /* sliderにbox-shadowをつけるために下に24pxの余白をつけた */
   }
 
   .swiper-slide {
     display: flex;
-    flex-wrap: wrap;
-    background: #f8f8f8;
     height: initial;
     width: 240px;
   }
 
   .news-item {
     background: #f8f8f8;
-  }
-
-  .news-item__image-wrapper {
-  
   }
 
   .news-item__detail-wrapper {
@@ -155,18 +128,15 @@ body {
 
 @media only screen and (min-width: 1024px) {
   :root {
-    --swiper-navigation-sides-offset: 64px;
-  }
-  .latest-news-header {
-    width: calc(100% - 64px * 2);
-  }
-
-  .latest-news-header__title {
-    font-size: 32px;
+    --swiper-navigation-sides-offset: 0px;
   }
 
   .swiper {
-    padding: 0 64px 24px;
+    margin-top: 32px;
+  }
+
+  .latest-news-header__title {
+    font-size: 24px;
   }
 
   .swiper-slide {
@@ -200,7 +170,7 @@ body {
     position: absolute;
     top: 0;
     left: -130%;
-    transform: skew(-25deg);
+    transform: skew(15deg);
     z-index: 2;
     transition: left .3s;
   }
@@ -210,7 +180,8 @@ body {
   }
 }
 
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
   color: #fff;
   background: #dc143c;
   width: 40px;
@@ -224,7 +195,8 @@ body {
   background: #b11031;
 }
 
-.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
   opacity: 0;
 }
 

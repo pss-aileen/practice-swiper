@@ -2,7 +2,7 @@
 
 - [team](https://pss-aileen.github.io/practice-swiper/team/): 横スクロールの従業員一覧
   - 参考: https://www.axarb.com/about-us
-- [news](): 横スクロールのニュース
+- [news](https://pss-aileen.github.io/practice-swiper/news/): 横スクロールのニュース
   - 参考: https://fctwente.nl/
 - [seasons](https://pss-aileen.github.io/practice-swiper/seasons/): 固定位置で画像が入れ替わる季節紹介
   - Swiperで実装して、CSSがうまく効かなかったのでSwiperを使わず実装...
