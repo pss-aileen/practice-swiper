@@ -1,7 +1,9 @@
 # Practice Swiper
 
-- [team](https://pss-aileen.github.io/practice-swiper/team/p): 従業員一覧
+- [team](https://pss-aileen.github.io/practice-swiper/team/): 従業員一覧
   - 参考: https://www.axarb.com/about-us
+- [seasons](https://pss-aileen.github.io/practice-swiper/seasons/)
+  - Swiperで実装して、CSSがうまく効かなかったのでSwiperを使わず実装...
 
 ## アイディア
 - [Webflow: Create a custom website | Visual website builder](https://webflow.com/?r=0)
